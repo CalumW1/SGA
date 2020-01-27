@@ -2,16 +2,61 @@
 <!-- Started: 5/01/2020 -->
 <!-- Author Calum Wilson -->
 <!-- Email: calumwilson2000@gmail.com-->
-
 <!doctype html>
 <html>
+    <head>
     <title>
         Survival Gaming Australia
     </title>
     <link rel="stylesheet" href="./CSS/Styles.css"/>
-    <head>
-       <h1>Survial Gaming Australia</h1> 
-       <h2>test</h2>
-    </head>
     
+   <body onload="loader()" style="margin: 0;">
+
+    <div id="loader">
+
+    </div>
+
+    <!-- display text -->
+    <div style="display:none;" id="mydiv" class="animate-bottom">
+        <img src="./Images/bonfire-clipart-fire-pit-7.png">
+        <h1> Survival Gaming Australia </h1>
+        <button onclick="mainpage()"> Survive </button>
+    </div>
+
+    <div style="display: none;" id="newpage">
+        <body>
+            <ul>
+                <li>
+                    <a> Steam Group</a>
+                </li>
+                <li>
+                    <a> Donate </a>
+                </li>
+                <a> Survival Gaming Australia </a>
+            </ul>   
+        </body>
+    </div>
+
+    <!-- script for the loader -->
+    <script>
+    var loadtimer;
+    
+    function loader(){
+        loadtimer = setTimeout(showPage, 3000)
+    }
+
+    function showPage(){
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("mydiv").style.display = "block";
+        document.getElementById("newpage").style.display = "none";
+    }
+
+    function mainpage(){
+        document.getElementById("mydiv").style.display = "none";
+        document.getElementById("newpage").style.display = "block";
+    }
+    </script>
+
+
+   </body>
 </html>
