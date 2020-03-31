@@ -5,58 +5,96 @@
 <!doctype html>
 <html>
     <head>
-    <title>
-        Survival Gaming Australia
-    </title>
-    <link rel="stylesheet" href="./CSS/Styles.css"/>
+        <title>
+            Survival Gaming Australia
+        </title>
+
+        <link rel="stylesheet" href="./CSS/Styles.css"/>
     
-   <body onload="loader()" style="margin: 0;">
+        <body onload="loader()" style="margin: 0;">
 
-    <div id="loader">
+        <div id="loader">
 
-    </div>
+        </div>
 
-    <!-- display text -->
-    <div style="display:none;" id="mydiv" class="animate-bottom">
-        <img src="./Images/bonfire-clipart-fire-pit-7.png">
-        <h1> Survival Gaming Australia </h1>
-        <button onclick="mainpage()"> Survive </button>
-    </div>
+        <div style="display: none;" id="newpage" class="mainpage">
+            <!-- title page -->
+            <section class="mainimage">
+                <img src="./Images/maineditblur.jpg"> 
 
-    <div style="display: none;" id="newpage">
-        <body>
-            <ul>
-                <li>
-                    <a> Steam Group</a>
-                </li>
-                <li>
-                    <a> Donate </a>
-                </li>
-                <a> Survival Gaming Australia </a>
-            </ul>   
+                <h1> Survival Gaming Australia </h1>
+
+                <form action="" target="_blank">
+                    <button id="discord" type="submit">Discord</button>
+                </form>
+
+                <form action="" target="_blank">
+                    <button id="steam" type="submit">Steam Group</button>
+                </form>
+            </section>
+
+           <!-- middle ages section --> 
+           <section class="Middleages">
+                
+                <div class="middlerectangle"></div>
+                <img src="./Images/gun.PNG">
+                <h2> Post-Apocalyptic Peroid </h2>
+
+           </section>
+
+           <!-- Medieval ages section --> 
+           <section class="MedievalAges">
+
+                <div class="MedievalAgesrectangle"></div>
+                <img src="./Images/battle.PNG">
+                <h2> Medieval Peroid </h2>
+
+           </section>
+
+           <!-- ZApocalyptic ages section --> 
+           <section class="ZApocalyptic">
+
+                <div class="ZApocalypticRectangle"></div>
+                <img src="./Images/zombie (1).PNG">
+                <h2> Apocalyptic Peroid </h2>
+
+           </section>
+
+           <!-- Trassic period section --> 
+           <section class="Trassic">
+
+            <div class="TrassicRectangle">
+                <img src="./Images/dinosaur.PNG">
+                <div class="TrassicRectanglehover">
+                    <h3> Ark </h1>
+                </div>
+            </div>
+            
+            <h2> Trassic Peroid </h2>
+            
+       </section>
+
+        </div>
+
+        <!-- script for the loader -->
+        <script>
+            var loadtimer;
+        
+            function loader(){
+                loadtimer = setTimeout(showPage, 3000)
+            }
+
+            function showPage(){
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("newpage").style.display = "block";
+            }
+
+            function mainpage(){
+                document.getElementById("newpage").style.display = "none";
+            }
+        </script>
+
+
         </body>
-    </div>
-
-    <!-- script for the loader -->
-    <script>
-    var loadtimer;
-    
-    function loader(){
-        loadtimer = setTimeout(showPage, 3000)
-    }
-
-    function showPage(){
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("mydiv").style.display = "block";
-        document.getElementById("newpage").style.display = "none";
-    }
-
-    function mainpage(){
-        document.getElementById("mydiv").style.display = "none";
-        document.getElementById("newpage").style.display = "block";
-    }
-    </script>
-
-
-   </body>
+   </head>
 </html>

@@ -15,7 +15,7 @@ body{
     margin: -75px 0 0 -75px;
     border: 12px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 12px solid #3498db;
+    border-top: 12px solid #2DA8D8;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -31,19 +31,12 @@ body{
   }
 
   /* Add animation to "page content" */
-
   #mydiv {
     padding: 350px;
     padding-bottom: 0px;
     text-align: center;
     animation: titledisplay 3s forwards;
   }
-
-  #mydiv img{
-      height: 150px;
-      width: 150px;
-  }
-
 
   @keyframes titledisplay {
     from {transform: translateY(0);}
@@ -65,47 +58,173 @@ body{
     to{opacity: 1;}
   }
 
-  #mydiv button {
-    border-color: #f44336;
-    color: red;
-  }
-  
-  #mydiv button:hover {
-    background: #f44336;
+/* align text to the center */
+  .mainimage h1{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    font-size: 75px;
   }
 
-  #newpage ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+/* Image css */
+ .mainimage img {
+  width: 1920px;
+  height: 400px;
+  padding-top: 0px;
+}
 
-  #newpage li {
-    float: right;
-  }
+/* buttons css */
+#discord{
+  position: absolute;
+  top: 3%;
+  left: 91%;
+  height: 45px;
+  width: 120px;
+  background-color: #2DA8D8;
+  border: 2px solid #2DA8D8;
+  border-radius: 30px;
+}
 
-  #newpage li a { 
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
+#steam{
+  position: absolute;
+  top: 3%;
+  left: 84%;
+  height: 45px;
+  width: 120px;
+  background-color: #2DA8D8;
+  border: 2px solid #2DA8D8;
+  border-radius: 30px;
+}
 
-  #newpage li a:hover {
-    background-color: red;
-  }
+/* server info css */
 
-  #newpage ul a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
+.middlerectangle{
+  height: 290px;
+  width: 290px;
+  border: 2px solid #2DA8D8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  border-radius: 30px;;
+}
+
+.Middleages h2{
+  position: absolute;
+  top: 86%;
+  left: 6%;
+  color: #2DA8D8;
+}
+
+.Middleages img{
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  z-index: 1;
+  top: 58%;
+  left: 7%;
+}
+
+.MedievalAgesrectangle{
+  height: 290px;
+  width: 290px;
+  border: 2px solid #2DA8D8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  border-radius: 30px;
+}
+
+.MedievalAges h2{
+  position: absolute;
+  top: 86%;
+  left: 33.5%;
+  color: #2DA8D8;
+}
+
+.MedievalAges img{
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  z-index: 1;
+  top: 58%;
+  left: 31.5%;
+}
+
+
+.ZApocalypticRectangle{
+  height: 290px;
+  width: 290px;
+  border: 2px solid #2DA8D8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  border-radius: 30px;
+}
+
+.ZApocalyptic h2{
+  position: absolute;
+  top: 86%;
+  left: 57.5%;
+  color: #2DA8D8;
+}
+
+.ZApocalyptic img{
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  z-index: 1;
+  top: 58%;
+  left: 56.5%;
+}
+
+.TrassicRectangle{
+  height: 290px;
+  width: 290px;
+  border: 2px solid #2DA8D8;
+  background-color: white;
+  position: absolute;
+  top: 55%;
+  left: 80%;
+  border-radius: 30px;
+}
+
+.Trassic h2{
+  position: absolute;
+  top: 86%;
+  left: 84%;
+  color: #2DA8D8;
+}
+
+.TrassicRectangle img{
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+  display: block;
+}
+
+.TrassicRectanglehover{
+  height: 290px;
+  width: 290px;
+  border: 2px solid #2DA8D8;
+  background-color: #2DA8D8;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: 30px;
+  opacity: 0;
+  transition: .5s ease;
+  z-index: 1;
+}
+
+.TrassicRectangle:hover .TrassicRectanglehover{
+  opacity: 1;
+}
+
